@@ -1,0 +1,121 @@
+.r-img{
+    border-radius: 5px;
+}
+
+.my-bg{
+    background-image: url('../Images/DefaultImages/comunidad.jpg');
+    background-size: 100% 100%;
+}
+
+.text-header{
+    margin-top: -7%;
+
+}
+
+.larger{
+    height:600px;
+}
+
+.justified{
+    text-align: justify;
+}
+
+.centered{
+    text-align: center;
+}
+
+.news-text{
+    font-size:18px;
+}
+
+@media (max-width:992px){
+    .news-text{
+        margin-left:15%;
+        margin-right:15%;
+    }
+    .m-title{
+        margin-left:15%;
+        margin-right:15%;
+    }
+    
+    .m-img{
+        margin-left:10%;
+        margin-right:10%;
+        width:325px;
+    }
+}
+
+.sub-titulo{
+    font-size:16px;
+    color:#1abc9c;
+}
+
+.bold-type{
+    font-weight:bold;
+}
+
+.img-50{
+    height:200px;
+    width:200px;
+}
+.img-100{
+    height:250px;
+    width:300px;
+}
+
+#demo {
+    height:100%;
+    position:relative;
+    overflow:hidden;
+  }
+  
+  
+.green{
+    background-color:#6fb936;
+}
+.thumb{
+    margin-bottom: 30px;
+}
+
+.page-top{
+    margin-top:85px;
+}
+  
+     
+.zoom {
+    width: 100%;
+    height: 200px;
+    border-radius:5px;
+    object-fit:fill;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+
+@media (min-width:991.98px){
+    .zoom{
+        object-fit:cover!important;
+    }
+}        
+   
+  .transition {
+      -webkit-transform: scale(1.2); 
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2);
+  }
+      .modal-header {
+     
+       border-bottom: none;
+  }
+      .modal-title {
+          color:#000;
+      }
+      .modal-footer{
+        display:none;  
+      }
+
+.invisible{
+    display:none!important;
+}
