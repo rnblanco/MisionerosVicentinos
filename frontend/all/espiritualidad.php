@@ -12,10 +12,10 @@
 
             foreach ($santos as $santo){
                 echo ' 
-                    <li class="col-md-6 col-lg-4 mb-5" data-src=" '.$santo['Imagenes'].' " data-sub-html="<h4>'.$santo['Nombre'].'</h4><p>'.$santo['Historia'].'</p>">
+                    <li class="col-md-6 col-lg-4 mb-5" data-src="../../backend/images/santoral-images/'.$santo['Imagenes'].' " data-sub-html="<h4>'.$santo['Nombre'].'</h4><p>'.$santo['Historia'].'</p>">
                         <div class="card portfolio-item mx-auto">
-                            <a href=" '.$santo['Imagenes'].' ">
-                                <img class="card-img-top zoom img-fluid" src="assets/images/santoral-images/'.$santo['Imagenes'].' " style="height:300px;">
+                            <a href="../../backend/images/santoral-images/'.$santo['Imagenes'].' ">
+                                <img class="card-img-top zoom img-fluid" src="../../backend/images/santoral-images/'.$santo['Imagenes'].' " style="height:300px;">
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title" style="height:50px!important;text-align:center;">'.$santo['Nombre'].'</h5>

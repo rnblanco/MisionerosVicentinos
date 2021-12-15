@@ -9,14 +9,7 @@
             $this->host = 'localhost';
             $this->dbName = 'paulinos';
             $this->user = 'root';
-            $this->pass = "";
-
-            /*
-            $this->host     = 'antoniocm2735974.domaincommysql.com';
-            $this->db       = 'paulinos';
-            $this->usuario     = 'antoniocm2735974';
-            $this->contraseña = "V1c3nt1n0501";
-            */
+            $this->pass = "12345";
         }
 
         protected function conectar(){
