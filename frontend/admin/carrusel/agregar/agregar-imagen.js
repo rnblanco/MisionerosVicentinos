@@ -17,7 +17,7 @@ $(document).keydown(function(e){
 function r() {
     location.href = "index.php";
 }
-/*
+
 //Quitar la posibilidad de copiar en titulo y cuerpo
 window.onload = function() {
     var title = document.getElementById('pais');
@@ -28,7 +28,7 @@ window.onload = function() {
     body.onpaste = function(e) {
       e.preventDefault();
     }
-}*/
+}
 // Validaciones para < > . & y números en el titulo
 // / 48-57 numeros / 38 & / 46 . / 60 < / 61 = / 62 > /
 function tprotection(str){

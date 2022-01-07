@@ -14,7 +14,7 @@
             $images2 = $buscarImages -> fetchAll();
 
             foreach ($images as $image){
-                echo  ' <li class="col-md-6 col-lg-4 mb-5" data-src="assets/images/santoral-images/'.$image['Imagenes'].' ">
+                echo  ' <li class="col-md-6 col-lg-4 mb-5" data-src="../../backend/images/santoral-images/'.$image['Imagenes'].' ">
                         <a href="../../backend/images/santoral-images/'.$image['Imagenes'].' " style="height:300px;">
                             <img class="zoom img-fluid" src="../../backend/images/santoral-images/'.$image['Imagenes'].' ">
                         </a>    
@@ -22,7 +22,7 @@
             }
 
             foreach ($images2 as $image){
-                echo  ' <li class="col-md-6 col-lg-4 mb-5" data-src="assets/images/posts-images/'.$image['Imagenes'].'">
+                echo  ' <li class="col-md-6 col-lg-4 mb-5" data-src=../../backend/images/posts-images/'.$image['Imagenes'].'">
                       <a href="../../backend/images/posts-images/'.$image['Imagenes'].'" style="height:300px;">
                         <img class="zoom img-fluid" src="../../backend/images/posts-images/'.$image['Imagenes'].'">
                       </a>

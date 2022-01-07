@@ -35,6 +35,7 @@
 
 				if($login->rowCount() >= 1){
 					$_SESSION['usuario'] = $user;
+					$_SESSION['nombre']= $usuario['0']['Nombre'];
 					$_SESSION['tipo']= $usuario['0']['Tipo'];
 					$_SESSION['id']= $usuario['0']['Id_Usuario'];
 				}

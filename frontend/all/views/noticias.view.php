@@ -65,7 +65,6 @@
             <div class="container">
                 <h2 class="page-section-heading text-center text-uppercase text-white">Eco provincial</h2>
                 <div class="divider-custom divider-light"> <div class="divider-custom-line"></div> <div class="divider-custom-icon"><i class="fas fa-star"></i></div> <div class="divider-custom-line"></div> </div>
-                
                 <?php $noticias->Eco(); ?>
             </div>
         </section>

@@ -15,7 +15,7 @@
         <link rel="stylesheet" type="text/css" href="../assets/vendor/daterangepicker/daterangepicker.css">
         <link rel="stylesheet" type="text/css" href="../assets/css/util.css">
         <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
-        <link rel="icon" type="image/x-icon" href="../assets/images/DefaultImages/icon.ico" />
+        <link rel="icon" type="image/x-icon" href="../../../backend/images/default-images/icon.ico" />
     </head>
     <body>
 

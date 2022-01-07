@@ -152,10 +152,9 @@
                     <div class='row'>
                         <div class='col-lg mb mb-lg'>
                             <h4 class='text-uppercase mb-4'>REDES SOCIALES</h4>
-                            <a class='btn btn-outline-light btn-social mx-1' href='#!'><i class='fab fa-fw fa-facebook-f'></i></a>
-                            <a class='btn btn-outline-light btn-social mx-1' href='#!'><i class='fab fa-fw fa-twitter'></i></a>
-                            <a class='btn btn-outline-light btn-social mx-1' href='#!'><i class='fab fa-fw fa-youtube'></i></a>
-                            <a class='btn btn-outline-light btn-social mx-1' href='#!'><i class='fab fa-fw fa-instagram'></i></a>
+                            <a class='btn btn-outline-light btn-social mx-1' href='https://www.facebook.com/RadioVicentinaCentroamericana/'><i class='fab fa-fw fa-facebook-f'></i></a>
+                            <a class='btn btn-outline-light btn-social mx-1' href='https://twitter.com/radio_vicentina'><i class='fab fa-fw fa-twitter'></i></a>
+                            <a class='btn btn-outline-light btn-social mx-1' href='https://www.youtube.com/channel/UCxFbq2LR1P4zmR_gF6J41UQ'><i class='fab fa-fw fa-youtube'></i></a>
                         </div>
 
                     </div>
@@ -164,7 +163,7 @@
 
             <!-- Copyright Section-->
             <div class='copyright py-4 text-center text-white'>
-                <div class='container'><small>Copyright © Misioneros Vicentinos 2020</small></div>
+                <div class='container'><small>Copyright © Misioneros Vicentinos ".date("Y")."</small></div>
             </div>
 
             <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
