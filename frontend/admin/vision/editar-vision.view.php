@@ -33,28 +33,30 @@
           <!-- Main Content -->
           <div id="content">
 
-            <!-- Topbar -->
-            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+              <!-- Topbar -->
+              <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
-              <!-- Sidebar Toggle (Topbar) -->
-              <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                <i class="fa fa-bars"></i>
-              </button>
+                  <!-- Sidebar Toggle (Topbar) -->
+                  <form class="form-inline">
+                      <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                          <i class="fa fa-bars"></i>
+                      </button>
+                  </form>
 
-              <!-- Topbar Navbar -->
-              <ul class="navbar-nav ml-auto">
+                  <!-- Topbar Navbar -->
+                  <ul class="navbar-nav ml-auto">
 
-                <div class="topbar-divider d-none d-sm-block"></div>
+                      <div class="topbar-divider d-none d-sm-block"></div>
 
-                <!-- Nav Item - User Information -->
-                <?php
-                  User();
-                ?>
+                      <!-- Nav Item - User Information -->
+                      <?php
+                      User();
+                      ?>
 
-              </ul>
+                  </ul>
 
-            </nav>
-            <!-- End of Topbar -->
+              </nav>
+              <!-- End of Topbar -->
 
             <!-- Begin Page Content -->
             <div class="container-fluid">
@@ -121,12 +123,10 @@
         </div>
       </div>
 
-      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       <script src="../assets/vendor/jquery/jquery.js"></script>
-      <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
       <script src="../assets/vendor/jquery-easing/jquery.easing.js"></script>
+      <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
       <script src="../assets/js/sb-admin-2.js"></script>
       <script src="editar-vision.js"></script>
     </body>

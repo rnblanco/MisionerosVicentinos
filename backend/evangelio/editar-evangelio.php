@@ -11,26 +11,14 @@
 
 			$titulo="";$texto="";$id="";$error="";
 
-			if(empty($_POST['titulo'])){
-				$error .= "falta titulo";
-			}
-			else{
-				$titulo = $_POST['titulo'];
-			}
+			if(empty($_POST['titulo'])) $error .= "falta titulo";
+			else $titulo = $_POST['titulo'];
 
-			if(empty($_POST['texto'])){
-				$error .= "falta texto";
-			}
-			else{
-				$texto = $_POST['texto'];
-			}
+			if(empty($_POST['texto'])) $error .= "falta texto";
+			else $texto = $_POST['texto'];
 
-			if(empty($_POST['id'])){
-				$error .= "falta id";
-			}
-			else{
-				$id = $_POST['id'];
-			}
+			if(empty($_POST['id'])) $error .= "falta id";
+			else $id = $_POST['id'];
 
 			//sin imagen
 			if ($texto!=="" && $titulo!=="" && $id!==""){

@@ -12,27 +12,18 @@
 
 			$error="";$historia="";$nombre="";$test="";$ext="";$name="";$locacion="";$nuevalocacion="";
 
-			if(empty($_POST['historia'])){
-				$error = "falta historia";
-			}
-			else{
-				$historia = $_POST['historia'];
-			}
+			if(empty($_POST['historia'])) $error = "falta historia";
+			else $historia = $_POST['historia'];
 
-			if(empty($_POST['nombre'])){
-				$error .= "falta nombre";
-			}
-			else{
-				$nombre = $_POST['nombre'];
-			}
+			if(empty($_POST['nombre'])) $error .= "falta nombre";
+			else $nombre = $_POST['nombre'];
 
 			if( $_FILES['img'] ){
 				$locacion = '../images/santoral-images/' . $_FILES['img']['name'];
 				$nuevalocacion =  $_FILES['img']['name'];
 			}
-			else{
-				$error .= "falta img";
-			}
+			else $error .= "falta img";
+
 
 			if( $historia!=="" && $nombre!=="" && $locacion!=="" ) {
 				$conexion = $this->conectar();

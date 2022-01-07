@@ -11,33 +11,17 @@
 			$cuerpo="";$titulo="";$locacion="";$id="";$error="";
 			$test="";$ext="";$name="";$nuevalocacion="";
 
-			if(empty($_POST['cuerpo'])){
-				$error = "falta cuerpo";
-			}
-			else{
-				$cuerpo = $_POST['cuerpo'];
-			}
+			if(empty($_POST['cuerpo'])) $error = "falta cuerpo";
+			else $cuerpo = $_POST['cuerpo'];
 
-			if(empty($_POST['titulo'])){
-				$error .= "falta titulo";
-			}
-			else{
-				$titulo = $_POST['titulo'];
-			}
+			if(empty($_POST['titulo'])) $error .= "falta titulo";
+			else $titulo = $_POST['titulo'];
 
-			if(empty($_POST['id'])){
-				$error .= "falta id";
-			}
-			else{
-				$id = $_POST['id'];
-			}
+			if(empty($_POST['id'])) $error .= "falta id";
+			else $id = $_POST['id'];
 
-			if( $_FILES['img'] ){
-				$locacion="hay imagen";
-			}
-			else{
-				$error .= "falta img";
-			}
+			if( $_FILES['img'] ) $locacion="hay imagen";
+			else $error .= "falta img";
 
 			//con imagen
 			if( $cuerpo!=="" && $titulo!=="" && $id!=="" && $locacion!==""){
@@ -94,9 +78,7 @@
 									http_response_code(505);
 								}
 							}
-							else{
-								http_response_code(505);
-							}
+							else http_response_code(505);
 						}
 					}
 				}

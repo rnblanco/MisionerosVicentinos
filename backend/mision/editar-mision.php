@@ -11,12 +11,9 @@
 			$texto="";$locacion="";$id="";$error="";
 			$test="";$ext="";$name="";$nuevalocacion="";
 
-			if(empty($_POST['texto'])){
-				$error = "falta texto";
-			}
-			else{
+			if(empty($_POST['texto'])) $error = "falta texto";
+			else
 				$texto = $_POST['texto'];
-			}
 
 			if(empty($_POST['id'])){
 				$error .= "falta id";

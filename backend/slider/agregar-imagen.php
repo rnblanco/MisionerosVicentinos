@@ -13,9 +13,7 @@
 				$locacion = '../images/slider-images/' . $_FILES['img']['name'];
 				$nuevalocacion = $_FILES['img']['name'];
 			}
-			else{
-				$error .= "falta img";
-			}
+			else $error .= "falta img";
 
 			if( $locacion!=="" ) {
 				$conexion = $this->conectar();

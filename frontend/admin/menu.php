@@ -75,7 +75,7 @@ function Menu($tipo,$path=''){
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="'.$path.'../historial/historial.php">
+                    <a class="nav-link active" href="'.$path.'historial/historial.php">
                     <i class="fas fa-history"></i>
                     <span>Historia Provincial</span></a>
                 </li>

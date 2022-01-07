@@ -11,33 +11,17 @@
 			$historia="";$nombre="";$locacion="";$id="";$error="";
 			$test="";$ext="";$name="";$nuevalocacion="";
 
-			if(empty($_POST['historia'])){
-				$error = "falta historia";
-			}
-			else{
-				$historia = $_POST['historia'];
-			}
+			if(empty($_POST['historia'])) $error = "falta historia";
+			else $historia = $_POST['historia'];
 
-			if(empty($_POST['nombre'])){
-				$error .= "falta nombre";
-			}
-			else{
-				$nombre = $_POST['nombre'];
-			}
+			if(empty($_POST['nombre'])) $error .= "falta nombre";
+			else $nombre = $_POST['nombre'];
 
-			if(empty($_POST['id'])){
-				$error .= "falta id";
-			}
-			else{
-				$id = $_POST['id'];
-			}
+			if(empty($_POST['id'])) $error .= "falta id";
+			else $id = $_POST['id'];
 
-			if( $_FILES['img'] ){
-				$locacion="hay imagen";
-			}
-			else{
-				$error .= "falta img";
-			}
+			if( $_FILES['img'] ) $locacion="hay imagen";
+			else $error .= "falta img";
 
 			//con imagen
 			if( $historia!=="" && $nombre!=="" && $id!=="" && $locacion!==""){

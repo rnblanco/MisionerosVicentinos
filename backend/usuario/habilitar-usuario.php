@@ -28,14 +28,10 @@
 				if($habilitarUsuario->rowCount() >= 1){
 					http_response_code(200);
 				}
-				else {
-					http_response_code(500);
-				}
+				else http_response_code(500);
 			}
 
-			else{
-				http_response_code(500);
-			}
+			else http_response_code(500);
 			json_encode($data);
 		}
 	}

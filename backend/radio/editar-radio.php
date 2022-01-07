@@ -11,26 +11,14 @@
 
 			$enlace="";$texto="";$id="";$error="";
 
-			if(empty($_POST['enlace'])){
-				$error .= "falta enlace";
-			}
-			else{
-				$enlace = $_POST['enlace'];
-			}
+			if(empty($_POST['enlace'])) $error .= "falta enlace";
+			else $enlace = $_POST['enlace'];
 
-			if(empty($_POST['texto'])){
-				$error .= "falta texto";
-			}
-			else{
-				$texto = $_POST['texto'];
-			}
+			if(empty($_POST['texto'])) $error .= "falta texto";
+            else $texto = $_POST['texto'];
 
-			if(empty($_POST['id'])){
-				$error .= "falta id";
-			}
-			else{
-				$id = $_POST['id'];
-			}
+			if(empty($_POST['id'])) $error .= "falta id";
+			else $id = $_POST['id'];
 
 			if ($texto!=="" && $enlace!=="" && $id!==""){
 

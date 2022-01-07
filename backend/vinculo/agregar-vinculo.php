@@ -10,27 +10,17 @@
 
 			$error="";$enlace="";$titulo="";$test="";$ext="";$name="";$locacion="";$nuevalocacion="";
 
-			if(empty($_POST['enlace'])){
-				$error = "falta enlace";
-			}
-			else{
-				$enlace = $_POST['enlace'];
-			}
+			if(empty($_POST['enlace'])) $error = "falta enlace";
+			else $enlace = $_POST['enlace'];
 
-			if(empty($_POST['titulo'])){
-				$error .= "falta titulo";
-			}
-			else{
-				$titulo = $_POST['titulo'];
-			}
+			if(empty($_POST['titulo'])) $error .= "falta titulo";
+			else $titulo = $_POST['titulo'];
 
 			if( $_FILES['img'] ){
 				$locacion = '../images/links-images/' . $_FILES['img']['name'];
 				$nuevalocacion = $_FILES['img']['name'];
 			}
-			else{
-				$error .= "falta img";
-			}
+			else $error .= "falta img";
 
 			if( $enlace!=="" && $titulo!=="" && $locacion!=="" ) {
 				$conexion = $this->conectar();

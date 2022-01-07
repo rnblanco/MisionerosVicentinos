@@ -12,40 +12,20 @@
 			$seccion="";$titulo="";$cuerpo="";$locacion="";$id="";$error="";
 			$test="";$ext="";$name="";$nuevalocacion="";
 
-			if(empty($_POST['seccion'])){
-				$error = "falta seccion";
-			}
-			else{
-				$seccion = $_POST['seccion'];
-			}
+			if(empty($_POST['seccion'])) $error = "falta seccion";
+			else $seccion = $_POST['seccion'];
 
-			if(empty($_POST['title'])){
-				$error .= "falta title";
-			}
-			else{
-				$titulo = $_POST['title'];
-			}
+			if(empty($_POST['title'])) $error .= "falta title";
+			else $titulo = $_POST['title'];
 
-			if(empty($_POST['body'])){
-				$error .= "falta body";
-			}
-			else{
-				$cuerpo = $_POST['body'];
-			}
+			if(empty($_POST['body'])) $error .= "falta body";
+			else $cuerpo = $_POST['body'];
 
-			if(empty($_POST['id'])){
-				$error .= "falta id";
-			}
-			else{
-				$id = $_POST['id'];
-			}
+			if(empty($_POST['id'])) $error .= "falta id";
+			else $id = $_POST['id'];
 
-			if( $_FILES['img'] ){
-				$locacion="hay imagen";
-			}
-			else{
-				$error .= "falta img";
-			}
+			if( $_FILES['img'] ) $locacion="hay imagen";
+			else$error .= "falta img";
 
 			//con imagen
 			if( $locacion!=="" && $cuerpo!=="" && $titulo!=="" && $seccion!=="" && $id!==""){

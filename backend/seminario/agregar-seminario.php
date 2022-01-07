@@ -12,27 +12,17 @@
 
 			$error="";$cuerpo="";$titulo="";$test="";$ext="";$name="";$locacion="";$nuevalocacion="";
 
-			if(empty($_POST['cuerpo'])){
-				$error = "falta cuerpo";
-			}
-			else{
-				$cuerpo = $_POST['cuerpo'];
-			}
+			if(empty($_POST['cuerpo'])) $error = "falta cuerpo";
+			else $cuerpo = $_POST['cuerpo'];
 
-			if(empty($_POST['titulo'])){
-				$error .= "falta titulo";
-			}
-			else{
-				$titulo = $_POST['titulo'];
-			}
+			if(empty($_POST['titulo'])) $error .= "falta titulo";
+			else $titulo = $_POST['titulo'];
 
 			if( $_FILES['img'] ){
 				$locacion = '../images/seminarios-images/' . $_FILES['img']['name'];
 				$nuevalocacion = $_FILES['img']['name'];
 			}
-			else{
-				$error .= "falta img";
-			}
+			else $error .= "falta img";
 
 			if( $cuerpo!=="" && $titulo!=="" && $locacion!=="" ) {
 				$conexion = $this->conectar();

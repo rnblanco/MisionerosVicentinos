@@ -11,26 +11,14 @@
 			$texto="";$locacion="";$id="";$error="";
 			$test="";$ext="";$name="";$nuevalocacion="";
 
-			if(empty($_POST['texto'])){
-				$error = "falta texto";
-			}
-			else{
-				$texto = $_POST['texto'];
-			}
+			if(empty($_POST['texto'])) $error = "falta texto";
+			else $texto = $_POST['texto'];
 
-			if(empty($_POST['id'])){
-				$error .= "falta id";
-			}
-			else{
-				$id = $_POST['id'];
-			}
+			if(empty($_POST['id'])) $error .= "falta id";
+			else $id = $_POST['id'];
 
-			if( $_FILES['img'] ){
-				$locacion="hay imagen";
-			}
-			else{
-				$error .= "falta img";
-			}
+			if( $_FILES['img'] ) $locacion="hay imagen";
+			else $error .= "falta img";
 
 			//con imagen
 			if( $texto!=="" && $id!=="" &&$locacion!==""){

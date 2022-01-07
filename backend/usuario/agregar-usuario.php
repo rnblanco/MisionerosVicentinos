@@ -11,40 +11,21 @@
 
 			$nombre="";$pais="";$email="";$pass="";$tipo="";$error="";
 
-			if(empty($_POST['nombre'])){
-				$error = "falta nombre";
-			}
-			else{
-				$nombre = $_POST['nombre'];
-			}
+			if(empty($_POST['nombre'])) $error = "falta nombre";
+			else $nombre = $_POST['nombre'];
 
-			if(empty($_POST['pais'])){
-				$error .= "falta title";
-			}
-			else{
-				$pais = $_POST['pais'];
-			}
 
-			if(empty($_POST['email'])){
-				$error .= "falta email";
-			}
-			else{
-				$email = $_POST['email'];
-			}
+			if(empty($_POST['pais'])) $error .= "falta title";
+			else $pais = $_POST['pais'];
 
-			if(empty($_POST['pass'])){
-				$error .= "falta pass";
-			}
-			else{
-				$pass = md5($_POST['pass']);
-			}
-			if(empty($_POST['tipo'])){
-				$error .= "falta tipo";
-			}
-			else{
-				$tipo = $_POST['tipo'];
-			}
+			if(empty($_POST['email'])) $error .= "falta email";
+			else $email = $_POST['email'];
 
+			if(empty($_POST['pass'])) $error .= "falta pass";
+			else $pass = md5($_POST['pass']);
+
+			if(empty($_POST['tipo'])) $error .= "falta tipo";
+			else $tipo = $_POST['tipo'];
 
 			if($nombre!=="" && $pais!=="" && $email!=="" && $pass!=="" && $tipo!==""){
 

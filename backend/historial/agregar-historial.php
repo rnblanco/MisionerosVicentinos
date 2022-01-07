@@ -11,27 +11,17 @@
 			$id = $_SESSION['id'];
 			$error="";$texto="";$pais="";$test="";$ext="";$name="";$locacion=""; $nuevalocacion="";
 
-			if(empty($_POST['texto'])){
-				$error = "falta texto";
-			}
-			else{
-				$texto = $_POST['texto'];
-			}
+			if(empty($_POST['texto'])) $error = "falta texto";
+			else $texto = $_POST['texto'];
 
-			if(empty($_POST['pais'])){
-				$error .= "falta pais";
-			}
-			else{
-				$pais = $_POST['pais'];
-			}
+			if(empty($_POST['pais'])) $error .= "falta pais";
+			else $pais = $_POST['pais'];
 
 			if( $_FILES['img'] ){
 				$locacion = '../images/countries-images/' . $_FILES['img']['name'];
 				$nuevalocacion = $_FILES['img']['name'];
 			}
-			else{
-				$error .= "falta img";
-			}
+			else $error .= "falta img";
 
 			if( $texto!=="" && $pais!=="" && $locacion!=="" ) {
 				$conexion = $this->conectar();

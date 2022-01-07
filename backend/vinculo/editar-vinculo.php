@@ -11,33 +11,17 @@
 			$enlace="";$titulo="";$locacion="";$id="";$error="";
 			$test="";$ext="";$name="";$nuevalocacion="";
 
-			if(empty($_POST['enlace'])){
-				$error = "falta enlace";
-			}
-			else{
-				$enlace = $_POST['enlace'];
-			}
+			if(empty($_POST['enlace'])) $error = "falta enlace";
+			else $enlace = $_POST['enlace'];
 
-			if(empty($_POST['titulo'])){
-				$error .= "falta titulo";
-			}
-			else{
-				$titulo = $_POST['titulo'];
-			}
+			if(empty($_POST['titulo'])) $error .= "falta titulo";
+			else $titulo = $_POST['titulo'];
 
-			if(empty($_POST['id'])){
-				$error .= "falta id";
-			}
-			else{
-				$id = $_POST['id'];
-			}
+			if(empty($_POST['id'])) $error .= "falta id";
+			else $id = $_POST['id'];
 
-			if( $_FILES['img'] ){
-				$locacion="hay imagen";
-			}
-			else{
-				$error .= "falta img";
-			}
+			if( $_FILES['img'] ) $locacion="hay imagen";
+			else $error .= "falta img";
 
 			//con imagen
 			if( $enlace!=="" && $titulo!=="" && $id!=="" && $locacion!=""){
@@ -93,9 +77,7 @@
 									http_response_code(500);
 								}
 							}
-							else{
-								http_response_code(404);
-							}
+							else http_response_code(404);
 						}
 					}
 				}
