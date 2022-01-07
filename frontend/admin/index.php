@@ -6,5 +6,5 @@
 		if($usuario != '') require_once 'index.view.php';
 		else header("Location :../../backend/auth/log-out.php");
 	}
-    else header("Location: ../auth/login.php");
+    else header("Location: ./auth/login.php");
 ?>

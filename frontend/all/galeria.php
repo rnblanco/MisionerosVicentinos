@@ -16,7 +16,7 @@
             foreach ($images as $image){
                 echo  ' <li class="col-md-6 col-lg-4 mb-5" data-src="assets/images/santoral-images/'.$image['Imagenes'].' ">
                         <a href="../../backend/images/santoral-images/'.$image['Imagenes'].' " style="height:300px;">
-                            <img class="zoom img-fluid" src="assets/images/santoral-images/'.$image['Imagenes'].' ">
+                            <img class="zoom img-fluid" src="../../backend/images/santoral-images/'.$image['Imagenes'].' ">
                         </a>    
                     </li>';
             }

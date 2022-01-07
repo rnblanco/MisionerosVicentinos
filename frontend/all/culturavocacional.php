@@ -20,7 +20,7 @@
                 echo'
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="card portfolio-item mx-auto" >
-                            <img class="card-img-top" src="assets/images/seminarios-images/'. $imagen .' " alt="Card image cap" style="height:200px!important;"> 
+                            <img class="card-img-top" src="../../backend/images/seminarios-images/'. $imagen .' " alt="Card image cap" style="height:200px!important;"> 
                             <div class="card-body">
                                 <h5 class="card-title" style="height:50px!important;text-align:center;color:black;"> '. $mision['Titulo'] .' </h5>
                                 <p class="card-text justified" style="padding-top:10px;color:black;"> '. $cuerpo .' </p>
@@ -40,7 +40,7 @@
 
             foreach ($misiones as $mision){
                 $imagen=$mision['Imagenes'];
-                $imagen==""?$imagen="assets/images/default-images/imagen_no_disponible.png":$imagen;
+                $imagen==""?$imagen="../../backend/images/default-images/imagen_no_disponible.png":$imagen;
 
                 echo'
                     <div class="portfolio-modal modal fade" id="portfolioModal'.$mision['Id_Seminario'].'" tabindex="-1" role="dialog" aria-labelledby="portfolioModal'.$mision['Id_Seminario'].'" aria-hidden="true">
