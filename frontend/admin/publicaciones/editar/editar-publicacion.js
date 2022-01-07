@@ -231,7 +231,6 @@ $(document).ready(function(){
             }
             //sin imagen
             else if( validate1(1) == true && validate1(2) == true && validate1(4) == true && validate1(3) == false ){
-
                 var form_data = new FormData();
                 form_data.append("seccion", seccion);form_data.append("title", title);form_data.append("body", body);form_data.append("id",id);                
                 $.ajax({
