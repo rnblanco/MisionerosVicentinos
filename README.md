@@ -1,6 +1,6 @@
 # Español
 ## Misioneros Vicentinos de América Central
-Esta es una aplicación web desarrollada para Misioneros Vicentinos de América Central y puede ser utilizada para fines didácticos. El sitio oficial se encuentra [aquí](http:/misionerosvicentinosac.org)
+Esta es una aplicación web desarrollada para Misioneros Vicentinos de América Central y puede ser utilizada para fines didácticos. El sitio oficial se encuentra [aquí](http:/misionerosvicentinosac.org). El sitio de pruebas se puede acceder desde [aquí.](https://mvicentinos.herokuapp.com/)
 
 ## Requerimientos
 - PHP 7.4.3 o mayor.
@@ -30,7 +30,7 @@ Mis redes son las siguientes:
 
 # English
 ## Misioneros Vicentinos de América Central
-This is a web app developed for Misioneros Vicentinos de América Central and it can be used for educational purposes. The official site is [here](http:/misionerosvicentinosac.org)
+This is a web app developed for Misioneros Vicentinos de América Central and it can be used for educational purposes. The official site is [here.](http:/misionerosvicentinosac.org) The testing site is [here.](https://mvicentinos.herokuapp.com/)
 
 ## Requirements
 - PHP 7.4.3 or higher.
@@ -38,7 +38,7 @@ This is a web app developed for Misioneros Vicentinos de América Central and it
 - Apache Server.
 
 ## Guide
-1. Clone the repository in the folder where the php files run on your computer (/ htdocs for windows and / var / www / html for Linux).
+1. Clone the repository in the folder where the php files run on your computer ( /htdocs for windows and /var/www/html for Linux).
 2. Import the file found in /backend/backups/paulinos.sql as a new database.
 3. Use the relevant credentials for your local server in the database connection file /backend/conexion.php.
 
