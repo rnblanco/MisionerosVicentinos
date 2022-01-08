@@ -1,3 +1,4 @@
 <?php
-    header("Location: ./frontend/all");
+    require_once "index.html";
+    //header("Location: ./frontend/all");
 ?>

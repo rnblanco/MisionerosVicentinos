@@ -4,7 +4,7 @@
 		<title>Misioneros Vicentinos</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <link rel="icon" type="image/x-icon" href="Images/DefaultImages/icon.ico" />
+        <link rel="icon" type="image/x-icon" href="../../backend/images/default-images/icon.ico" />
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/fonts.css" rel="stylesheet" />
         <link href="css/main.css" rel="stylesheet" />
@@ -31,7 +31,7 @@
 
         <?php
 			Menu(4);
-			$publicaciones = new Publicaciones(6);
+			$publicaciones = new Publicaciones(3,"Articulos Vocacionales");
 			$culturaVocacional = new CulturaVocacional();
 		?>
 
@@ -77,7 +77,10 @@
                 <div class="divider-custom"> <div class="divider-custom-line"></div> <div class="divider-custom-icon"><i class="fas fa-star"></i></div> <div class="divider-custom-line"></div> </div>
 
                 <div class="row">
-                    <?php $publicaciones->NoticiasInicio("Testimonios Vocacionales"); ?>
+                    <?php
+                        $publicaciones = new Publicaciones(3,"Testimonios Vocacionales");
+                        $publicaciones->NoticiasInicio("Testimonios Vocacionales");
+                    ?>
                 </div>
                 <div class="d-flex justify-content-center pagination-lg">
                     <nav aria-label='Páginas de artículos'>

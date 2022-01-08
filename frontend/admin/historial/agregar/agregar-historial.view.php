@@ -124,6 +124,7 @@
       </div>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+      <script src="../../assets/vendor/jquery-easing/jquery.easing.js"></script>
       <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
       <script src="../../assets/js/sb-admin-2.js"></script>

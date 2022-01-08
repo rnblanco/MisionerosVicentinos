@@ -9,20 +9,24 @@
 		private $resultadosPorPagina;
 		private $indice;
 		private $conexion;
+        private $tipo;
 
-		public function __construct($nPorPagina){
+		public function __construct($nPorPagina,$tipo){
 			parent::__construct();
 			$this->conexion=$this->conectar();
 			$this->resultadosPorPagina = $nPorPagina;
 			$this->indice = 0;
 			$this->paginaActual = 1;
-			$this->calcularPaginas();
+            $this->tipo = $tipo;
+            $this->calcularPaginas();
 		}
 
 		public function calcularPaginas(){
-			$totalResultados = $this->conexion->query("SELECT COUNT(*) FROM publicaciones");
-			$this->nResultados = $totalResultados->fetchColumn();
-			$this->totalPaginas = intdiv($this->nResultados,$this->resultadosPorPagina);
+			$totalResultados = $this->conexion->prepare("SELECT * FROM publicaciones WHERE Estado = 2 AND Seccion = :seccion" );
+            $totalResultados->bindParam(':seccion', $this->tipo, PDO::PARAM_STR);
+            $totalResultados->execute();
+			$this->nResultados = $totalResultados->rowCount();
+			$this->totalPaginas = ceil($this->nResultados/$this->resultadosPorPagina);
 			if(isset($_GET['pagina'])){
 				$this->paginaActual = $_GET['pagina'];
 				$this->indice = ($this->paginaActual - 1) * $this->resultadosPorPagina;
@@ -36,6 +40,8 @@
 			$buscarNoticiasInicio->bindParam(':n', $this->resultadosPorPagina, PDO::PARAM_INT);
 			$buscarNoticiasInicio->execute();
 			$noticiasInicio = $buscarNoticiasInicio->fetchAll();
+
+            if($buscarNoticiasInicio->rowCount()<1) echo '<p class="col-12 text-center">No hay resultados para esta página</p>';
 
 			foreach($noticiasInicio as list($idPublicacion, $id_Usuario, $titulo, $cuerpo, $imagen)){
 
@@ -126,13 +132,9 @@
 		public function Paginas(){
 			$actual = '';
 			echo "<ul class='pagination'>";
-
 			for($i=0; $i < $this->totalPaginas; $i++){
-				if(($i + 1) == $this->paginaActual){
-					$actual = ' class="page-item active" ';
-				}else{
-					$actual = ' class="page-item " ';
-				}
+				if(($i + 1) == $this->paginaActual) $actual = ' class="page-item active" ';
+                else $actual = ' class="page-item " ';
 				echo '<li ' .$actual . ' style="font-weight:bold;"><a class="page-link" href="?pagina='. ($i + 1). '">'. ($i + 1) . '</a></li>';
 			}
 			echo "</ul>";

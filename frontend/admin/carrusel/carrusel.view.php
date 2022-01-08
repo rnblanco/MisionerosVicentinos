@@ -135,8 +135,8 @@
           </div>
         </div>
       </div>
-
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+      <script src="../assets/vendor/jquery-easing/jquery.easing.js"></script>
       <script src="../assets/vendor/datatables/jquery.dataTables.min.js"></script>
       <script src="../assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
       <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>

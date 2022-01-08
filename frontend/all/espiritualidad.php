@@ -28,7 +28,7 @@
 
         public function Mariologia(){
             $conexion = $this->conectar();
-            $buscarVinculos = $conexion -> prepare('SELECT * FROM Mariologia');
+            $buscarVinculos = $conexion -> prepare('SELECT * FROM mariologia');
             $buscarVinculos -> execute();
             $misiones = $buscarVinculos -> fetchAll();
 

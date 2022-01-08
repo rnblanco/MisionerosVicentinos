@@ -4,7 +4,7 @@
 		<title>Misioneros Vicentinos</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <link rel="icon" type="image/x-icon" href="Images/DefaultImages/icon.ico" />
+        <link rel="icon" type="image/x-icon" href="../../backend/images/default-images/icon.ico" />
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/fonts.css" rel="stylesheet" />
         <link href="css/main.css" rel="stylesheet" />

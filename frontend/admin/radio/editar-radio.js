@@ -36,7 +36,7 @@ window.onload = function() {
 function tprotection(str){
 
         var iKeyCode = (str.which) ? str.which : str.keyCode
-        if (  iKeyCode==61 || iKeyCode == 62 || iKeyCode == 60 || iKeyCode == 46 || iKeyCode == 38|| iKeyCode == 34 )
+        if (  iKeyCode==61 || iKeyCode == 62 || iKeyCode == 60 || iKeyCode == 38|| iKeyCode == 34 )
             return false;
         return true; 
     

@@ -116,8 +116,8 @@ function validate1(val) {
                 switch(seccion){
                     case "ActividadesPastorales": seccion = "Actividades Pastorales";break;
                     case "ArticulosVocacionales": seccion = "Artículos Vocacionales";break;
-                    case "ArticulosVarios": seccion = " Artículos Varios";break;
-                    case "TestimoniosVocacionales": seccion = " Testimonios Vocacionales";break;
+                    case "ArticulosVarios": seccion = "Artículos Varios";break;
+                    case "TestimoniosVocacionales": seccion = "Testimonios Vocacionales";break;
                 }  
             }
             else{
@@ -161,8 +161,8 @@ function validate1(val) {
                 switch(seccion){
                     case "ActividadesPastorales": seccion = "Actividades Pastorales";break;
                     case "ArticulosVocacionales": seccion = "Artículos Vocacionales";break;
-                    case "ArticulosVarios": seccion = " Artículos Varios";break;
-                    case "TestimoniosVocacionales": seccion = " Testimonios Vocacionales";break;
+                    case "ArticulosVarios": seccion = "Artículos Varios";break;
+                    case "TestimoniosVocacionales": seccion = "Testimonios Vocacionales";break;
                 }  
             }
             else{
