@@ -12,6 +12,14 @@ Esta es una aplicación web desarrollada para Misioneros Vicentinos de América 
 2. Importar como una nueva base de datos, el archivo que se encuentra en /backend/backups/paulinos.sql .
 3. Utilizar las credenciales pertinentes para tu servidor local en el archivo de conexión a la base de datos /backend/conexion.php .
 
+## Credenciales
+Las credenciales de acceso para hacer pruebas están establecidas de la siguiente manera:
+
+|   Usuario   | Contraseña | 
+|:-----------:|:----------:|
+| Super Admin | superadmin |
+|    Admin    |   admin    |
+    
 ## Notas
 Ahora, puedes hacer pruebas en tu servidor local de cómo funciona el sitio, por favor hacer uso de este código con responsabilidad y si encuentran errores pueden contactarme :)
 
@@ -33,6 +41,14 @@ This is a web app developed for Misioneros Vicentinos de América Central and it
 1. Clone the repository in the folder where the php files run on your computer (/ htdocs for windows and / var / www / html for Linux).
 2. Import the file found in /backend/backups/paulinos.sql as a new database.
 3. Use the relevant credentials for your local server in the database connection file /backend/conexion.php.
+
+## Credentials
+The access credentials for testing are established as follows:
+
+|    User     |  Password  | 
+|:-----------:|:----------:|
+| Super Admin | superadmin |
+|    Admin    |   admin    |
 
 ## Notes
 Now, you can test how the site works on your local server, please use this code responsibly and if you find errors you can contact me :)
