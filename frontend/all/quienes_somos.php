@@ -51,7 +51,6 @@
                 $imagen=$mision['Imagenes'];
 	            $imagen==""?$imagen="../../backend/images/default-images/imagen_no_disponible.png":$imagen;
 	            echo'
-                    <div class="row">
                         <div class="col-lg-3 col-md-6 mb-5">
                             <div class="card portfolio-item mx-auto">
                                 <img class="card-img-top" src="../../backend/images/countries-images/'.$imagen.'" alt="Card image cap">
@@ -60,7 +59,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
                 ';
             }
         }

@@ -64,16 +64,17 @@
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Presencia por países</h2>
                 <div class="divider-custom"> <div class="divider-custom-line"></div> <div class="divider-custom-icon"><i class="fas fa-star"></i></div> <div class="divider-custom-line"></div> </div>
                 <div class="row">
-                    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 ml-auto">
+                    <div class="col-12">
                         <p class="lead justified mb-5">La Congregación de la Misión (C.M.), fundada por San Vicente de Paúl en 1625, tiene presencia en 95 países de los 5 Continentes. Por esta razón, para su organización, se divide en Provincias, Vice-provincias, Regiones y Misiones Internacionales. Para julio de 2020 cuenta con 3,106 misioneros.
                             Su presencia en Centroamérica es a través de varias Provincias, entre ellas la Provincia de América Central, que cuenta con misioneros en
                             los países de:</p>
                     </div>
 
                 </div>
+                <div class="row">
+                    <?php $quienesSomos->Presencia();?>
+                </div>
 
-                <?php $quienesSomos->Presencia();?>
-                    
             </div>
         </section>
 
