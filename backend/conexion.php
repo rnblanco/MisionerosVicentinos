@@ -6,10 +6,10 @@
         private $pass;
 
         public function __construct(){
-            $this->host = 'localhost';
-            $this->dbName = 'paulinos';
-            $this->user = 'root';
-            $this->pass = "12345";
+            $this->host = 'us-cdbr-east-05.cleardb.net';
+            $this->dbName = 'heroku_ea79ed0bd13dd15';
+            $this->user = 'bce8c978cf04cc';
+            $this->pass = "c9e34ff0";
         }
 
         protected function conectar(){
