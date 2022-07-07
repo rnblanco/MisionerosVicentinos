@@ -25,7 +25,7 @@ Ahora, puedes hacer pruebas en tu servidor local de cómo funciona el sitio, por
 
 Mis redes son las siguientes:
 
-- [LinkedIn](https://www.linkedin.com/in/ren%C3%A9-blanco-499141113/)
+- [LinkedIn](https://www.linkedin.com/in/rnblanco/)
 - [Instagram](https://www.instagram.com/rn_blanco/)
 
 # English
@@ -55,5 +55,5 @@ Now, you can test how the site works on your local server, please use this code 
 
 My social networks are the following:
 
-- [LinkedIn](https://www.linkedin.com/in/ren%C3%A9-blanco-499141113/)
+- [LinkedIn](https://www.linkedin.com/in/rnblanco/)
 - [Instagram](https://www.instagram.com/rn_blanco/)
